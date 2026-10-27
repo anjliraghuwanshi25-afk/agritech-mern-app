@@ -1,0 +1,19 @@
+{
+  "name": "agritech-platform",
+  "version": "1.0.0",
+  "description": "AgriTech - Empowering farmers through digital technology (MERN Full-Stack Application)",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
+    "start": "npm --prefix server start",
+    "build": "npm --prefix client run build"
+  },
+  "keywords": ["mern", "agriculture", "agritech", "farmers", "crop-monitoring", "smart-farming"],
+  "author": "AgriTech Developer",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
